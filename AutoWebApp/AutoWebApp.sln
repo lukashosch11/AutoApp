@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoWebApp", "AutoWebApp\AutoWebApp.csproj", "{A47049A1-8239-4C69-80A4-00417D764BFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A47049A1-8239-4C69-80A4-00417D764BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47049A1-8239-4C69-80A4-00417D764BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47049A1-8239-4C69-80A4-00417D764BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47049A1-8239-4C69-80A4-00417D764BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
