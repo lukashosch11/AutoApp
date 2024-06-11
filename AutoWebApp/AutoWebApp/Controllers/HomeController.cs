@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using AutoWebApp.Context;
 using Microsoft.AspNetCore.Mvc;
 using AutoWebApp.Models;
 
@@ -15,6 +16,11 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        MyDbContext dbctx = new MyDbContext();
+        int AutoAnzahl = dbctx.Autos.Count();
+        
+        ViewData["TestData"] = AutoAnzahl.ToString();
+        
         return View();
     }
 
