@@ -1,5 +1,34 @@
-﻿@{
+﻿@model List<AutoWebApp.Entities.Auto>
+
+@{
     ViewData["Title"] = "Auto Übersicht";
 }
 
-<h1>Hier werden alle Autos angezeigt</h1>
+<h1>Autos</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Marke</th>
+        <th>Preis</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    @{
+        foreach (var auto in Model)
+        {
+            <tr>
+                <td>@(auto.Autoid)</td>
+                <td>@(auto.Marke)</td>
+                <td>@(auto.Preis)</td>
+                <td></td>
+            </tr>
+        }
+    }
+    
+    </tbody>
+</table>
+

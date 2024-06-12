@@ -17,7 +17,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         MyDbContext dbctx = new MyDbContext();
-        int AutoAnzahl = dbctx.Autos.Count();
+        int AutoAnzahl = dbctx.Auto.Count();
         
         ViewData["TestData"] = AutoAnzahl.ToString();
         

@@ -16,7 +16,7 @@ public partial class MyDbContext : DbContext
     {
     }
 
-    public virtual DbSet<Auto> Autos { get; set; }
+    public virtual DbSet<Auto> Auto { get; set; }
 
     public virtual DbSet<Autokategorie> Autokategories { get; set; }
 
