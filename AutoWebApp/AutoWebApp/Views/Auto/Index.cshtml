@@ -6,11 +6,14 @@
 
 <h1>Autos</h1>
 
+<a href="/Auto/New" class="btn btn-primary">New Auto</a>
+
 <table class="table">
     <thead>
     <tr>
         <th>ID</th>
         <th>Marke</th>
+        <th>Modell</th>
         <th>Preis</th>
         <th>Actions</th>
     </tr>
@@ -23,8 +26,12 @@
             <tr>
                 <td>@(auto.Autoid)</td>
                 <td>@(auto.Marke)</td>
+                <td>@(auto.Modell)</td>
                 <td>@(auto.Preis)</td>
-                <td></td>
+                <td>
+                    <a class="btn" href="/Auto/Edit?id=@(auto.Autoid)">✏️ Edit</a>
+                    <a class="btn" href="/Auto/Delete?id=@(auto.Autoid)">❌ Delete</a>
+                </td>
             </tr>
         }
     }

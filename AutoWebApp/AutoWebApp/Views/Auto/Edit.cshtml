@@ -1,0 +1,47 @@
+﻿@model AutoWebApp.Entities.Auto
+
+@{
+    ViewData["Title"] = "Auto Editieren";
+}
+
+<h1>Edit Auto</h1>
+
+<form action="/Auto/UpdateAuto" method="post">
+    
+    <input type="hidden" id="Autoid" name="Autoid" value="@(Model.Autoid)"/>
+    
+    <table>
+        <tr>
+            <td>
+                Marke
+            </td>
+            <td>
+                <input type="text" id="Marke" name="Marke" value="@(Model.Marke)"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Modell
+            </td>
+            <td>
+                <input type="text" id="Modell" name="Modell" value="@(Model.Modell)"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Preis
+            </td>
+            <td>
+                <input type="number" id="Preis" name="Preis" value="@(Model.Preis)"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class="btn btn-danger" href="/Auto/">Cancel</a>
+            </td>
+            <td>
+                <button type="submit" class="btn btn-success">Save</button>
+            </td>
+        </tr>
+    </table>
+</form>
